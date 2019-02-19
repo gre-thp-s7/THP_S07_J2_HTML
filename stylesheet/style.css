@@ -186,6 +186,24 @@ span .border, .border-warning {
   background: radial-gradient(circle, transparent 30%, #DBD2C8);
 }
 
+.vignette-colorful-s {
+  position: relative;
+  height: 400px;
+  display: block;
+  background-image: url(https://www.incimages.com/uploaded_files/image/970x450/getty_473909426_129584.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  filter: saturate(70%);
+}
+
+.vignette-colorful-s:after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: radial-gradient(circle, transparent 30%, #DBD2C8););
+}
+
 .ontop {
   color: #000033;
   text-shadow: white 0px 0px 3px;
@@ -195,5 +213,27 @@ span .border, .border-warning {
   max-width: 50%;
   margin: auto;
   padding: auto;
-  pointer-events:none;
+}
+
+.ontop-a {
+  position: relative;
+  top: 3em;
+  z-index: 17;
+}
+
+.ontop-s {
+  color: #000033;
+  text-shadow: white 0px 0px 3px;
+  position: relative;
+  font-weight: bold;
+  top: 3em;
+  max-width: 50%;
+  margin: auto;
+  padding: auto;
+}
+
+.ontop-a-s {
+  position: relative;
+  top: 1em;
+  z-index: 17;
 }

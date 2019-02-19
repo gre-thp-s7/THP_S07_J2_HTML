@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Commentaires</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/superhero/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="stylesheet/style.css">
-</head>
+    <meta charset="utf-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/superhero/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="../stylesheet/style.css">
+  </head>
+
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2> Comment </h2>
+  <div class="my-5 p-3 bg-white rounded box-shadow text-secondary" style="margin: 100px">
 
-        <!-- Liste commentaires -->
-        <ul class="media-list">
-          <li class="media">
-            <a class="pull-left" href="#"><img width="66" height="66" src="img/bob.jpg"></a>
+        <h5 class="border-bottom border-gray pb-3 mb-0" style="text-align: center">Comments</h5>
 
-            <div class="media-body">
-              <h5 class="mb-0">Nom de l'auteur</h5>
-              <small class="form-text text-muted mt-0 pt-0">Heure de création du commentaire</small>
-              <p>Texte du commentaire</p>
-          </li>
-          <li class="media">
-              <a class="pull-left" href="#"><img width="66" height="66" src="img/singe.jpg"></a>
-  
-              <div class="media-body">
-                <h5 class="mb-0">Prénom de l'auteur</h5>
-                <small class="form-text text-muted mt-0 pt-0">Heure de création du commentaire</small>
-                <p>Texte du commentaire</p>
-            </li>
-        </ul>
-        <hr>
-        <div class="form-group">
-          <label for="comment">Ajouter un commentaire</label>
-          <textarea class="form-control" rows="3" id="comment"></textarea>
+        <div class="media pt-3">
+          <img src="http://lorempixel.com/50/50/people/1?random" class="rounded-circle align-self-start mr-3">         
+          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray text-dark">
+            <strong class="d-block">@username</strong>
+            <small class="text-primary">writtened the @creation-date</small><br>
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          </p>
         </div>
-        <button type="button" class="btn btn-primary">Commenter</button>
 
-      </div>
-    </div>
+        <div class="media text-muted pt-3">
+        <img src="http://lorempixel.com/50/50/people/2?random" class="rounded-circle align-self-start mr-3">          
+          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray  text-dark">
+            <strong class="d-block">@username</strong>
+            <small class="text-primary">writtened the @creation-date</small><br>
+
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          </p>
+        </div>
+
+        <div class="media pt-3 row">
+        <div class="form-group text-secondary">
+          <label for="comment" style="margin-left: 15px"><strong class="d-block">Add your own comment</strong></label>
+          <textarea placeholder="writte it here, be nice!" class="form-control border" id="comment"rows="1"cols="200"></textarea>
+        </div>
+        <br>
+        <a href="#" class="btn btn-sm btn-primary" style="margin-left: 15px;   border-radius: 1px 3px">spread</a>
+ 
+        </div>
+
+
+
+
+
+
+
+
   </div>
 
 </body>

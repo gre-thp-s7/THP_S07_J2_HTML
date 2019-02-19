@@ -217,7 +217,7 @@ span .border, .border-warning {
 
 .ontop-a {
   position: relative;
-  top: 3em;
+  top: 4em;
   z-index: 17;
 }
 
@@ -234,6 +234,6 @@ span .border, .border-warning {
 
 .ontop-a-s {
   position: relative;
-  top: 1em;
+  top: -1em;
   z-index: 17;
 }

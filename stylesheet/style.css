@@ -1,3 +1,173 @@
+span .border, .border-warning {
+  border-width: 2px !important;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Asap+Condensed:600i,700');
+
+.card1 body{
+  display: flex;
+  text-transform: uppercase;
+  font-family: 'Asap Condensed', sans-serif;
+}
+
+.card1 h1 {
+  font-size: 60px;
+}
+.card1 h3 {
+  font-size: 26px;
+}
+
+.card1 .italic {
+  font-style: italic;
+}
+
+.card1 {
+  position: relative;
+  margin: auto;
+  height: 350px;
+  width: 600px;
+  text-align: center;
+  background-image: url("https://www.univ-grenoble-alpes.fr/medias/photo/international-sejour-universite-grenoble-alpes_1453910715178-jpg?ID_FICHE=1187");
+  border-radius: 0px;
+  box-shadow: 0 6px 12px -3px rgba(0,0,0,.3);
+  color: #fff;
+  padding: 30px;
+}
+
+.card1 header {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 100%;
+  padding: 0 10%;
+  transform: translateY(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.card1 header > *:first-child {
+  text-align: left;
+}
+.card1 header > *:last-child {
+  text-align: right;
+}
+
+.logo {
+  font-size: 24px;
+  position: relative;
+}
+.logo:before,
+.logo:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  border-top: 3px solid currentColor;
+  transform: translateY(-50%);
+}
+
+.logo:before {
+  right: 158px;
+  width: 40%;
+}
+.logo:after {
+  left: 158px;
+  width: 55%;
+}
+
+.logo span {
+  /*border: solid currentColor;
+  border-width: 0 3px 3px 0;
+  position: absolute;
+  top: -22px;
+  width: 69px;
+  height: 70px;
+  left: 50%;
+  transform: translateX(-58%) rotate(58deg) skew(0deg, -30deg);*/
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 1px);
+}
+
+.announcement {
+  position: relative;
+  border: 3px solid currentColor;
+  border-top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.announcement:before,
+.announcement:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  border-top: 3px solid currentColor;
+  height: 0;
+  width: 15px;
+}
+.announcement:before {
+  left: -3px;
+}
+.announcement:after {
+  right: -3px;
+}
+
+
+.inspiration {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+
+
+
+
+
+
+
+.card1 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.card1 a,
+.card1 a:visited,
+.card1 a:focus,
+.card1 a:active,
+.card1 a:link {
+  text-decoration: none;
+  outline: 0;
+}
+
+.card1 a {
+  color: currentColor;
+  transition: .2s ease-in-out;
+}
+
+.card1 h1, h2, h3, h4 {
+  margin: .15em 0;
+}
+
+.card1 ul {
+  padding: 0;
+  list-style: none;
+}
+
+.card1 img {
+  vertical-align: middle;
+  height: auto;
+  width: 100%;
+}
+
 .vignette-colorful {
   position: relative;
   height: 600px;
@@ -13,6 +183,24 @@
   content: '';
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
+  background: radial-gradient(circle, transparent 30%, #DBD2C8);
+}
+
+.vignette-colorful-s {
+  position: relative;
+  height: 400px;
+  display: block;
+  background-image: url(https://www.incimages.com/uploaded_files/image/970x450/getty_473909426_129584.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  filter: saturate(70%);
+}
+
+.vignette-colorful-s:after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
   background: radial-gradient(circle, transparent 30%, #DBD2C8););
 }
 
@@ -25,5 +213,27 @@
   max-width: 50%;
   margin: auto;
   padding: auto;
-  pointer-events:none;
+}
+
+.ontop-a {
+  position: relative;
+  top: 3em;
+  z-index: 17;
+}
+
+.ontop-s {
+  color: #000033;
+  text-shadow: white 0px 0px 3px;
+  position: relative;
+  font-weight: bold;
+  top: 3em;
+  max-width: 50%;
+  margin: auto;
+  padding: auto;
+}
+
+.ontop-a-s {
+  position: relative;
+  top: 1em;
+  z-index: 17;
 }

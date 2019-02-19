@@ -168,3 +168,32 @@ span .border, .border-warning {
   width: 100%;
 }
 
+.vignette-colorful {
+  position: relative;
+  height: 600px;
+  display: block;
+  background-image: url(https://preview.redd.it/axhp4rlc0d901.jpg?overlay-align=bottom,left&overlay-pad=8,16&crop=1200:628.272251309,smart&overlay=%2Fv9vyirk6hl221.png%3Fs%3Db466421949eb723078743745ce6421609d7a9c66&width=1200&height=628.272251309&auto=webp&s=472e5607d1828d4d1debf16201658736eb93f58e);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  filter: saturate(70%);
+}
+
+.vignette-colorful:after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: radial-gradient(circle, transparent 30%, #DBD2C8);
+}
+
+.ontop {
+  color: #000033;
+  text-shadow: white 0px 0px 3px;
+  position: relative;
+  font-weight: bold;
+  top: 7em;
+  max-width: 50%;
+  margin: auto;
+  padding: auto;
+  pointer-events:none;
+}

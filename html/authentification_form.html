@@ -11,11 +11,9 @@
 <body>
 
 <!-- avec container -->
-<div class="container">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <br><br><br>
-  
+<div class="container" style="padding-top: 50px; padding-bottom: 50px">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-6 border border-primary" style="padding-top: 20px">
         <h1 class="h3 mb-3 font-weight-normal text-center">Authentification form</h1>
   
         <!-- Input email/name/etc -->
@@ -47,15 +45,15 @@
   
         <!-- Input text area -->
         <div class="form-group">
-          <label for="exampleTextarea">Example textarea</label>
+          <label for="exampleTextarea">Example text-area</label>
           <textarea class="form-control" id="exampleTextarea" rows="5"></textarea>
         </div>
   
         <!-- Input file -->
         <div class="form-group">
-          <label for="exampleInputFile">Joindre un fichier</label>
+          <label for="exampleInputFile">  Joindre un fichier</label>
           <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-          <small id="fileHelp" class="form-text text-muted mt-0">Info sur le fichier a up </small>
+          <small id="fileHelp" class="form-text text-muted mt-0">  Info sur le fichier a uploader </small>
         </div>
   
         <!-- Radio Buttons -->
@@ -101,8 +99,9 @@
         </div>
   
         <!-- Submit button -->
-        <button type="submit" class="btn btn-primary">Submit</button>
-        
+        <div class="text-center" style="padding-top: 20px; padding-bottom: 30px">
+        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </div>
       </div>
     </div>
   </div>

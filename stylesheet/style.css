@@ -274,3 +274,8 @@ span .border, .border-warning {
   0%   { transform: scale(30); }
   100% { transform: scale(1); }
 }
+
+.index {
+  padding-left: 10em;
+  font-size: 20px;
+}
